@@ -17,6 +17,27 @@ public class Card{
     }
 }
 
+public class GoodPlayer {
+    private bool _Merlin = true;
+    private bool _Preseval = true;
+    private bool _Peon = true;
+    private bool _Asasin = false;
+    private bool _Mordred = false;
+    private bool _M = false;                 // Je me rapele pas du nom lol met le
+    private bool _Groot = false;
+
+    public GoodPlayer (bool Merlin, bool Preseval, bool Peon, bool Assasin, bool Mordred, bool M, bool Groot);
+    public bool GetGoodPlayer() {
+        return _Merlin;
+        return _Preseval;
+        return _Peon;
+        return _Asasin;
+        return _Mordred;
+        return _M;                           // La aussi lol
+        return _Merlin;
+    }
+}
+
 public class CardDraw : MonoBehaviour {
     private List<Card> draw;
 	public GameObject[] CardDefinition;
