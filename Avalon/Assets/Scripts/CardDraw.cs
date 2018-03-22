@@ -17,26 +17,8 @@ public class Card{
     }
 }
 
-public class GoodPlayer {
-    private bool _Merlin = true;
-    private bool _Preseval = true;
-    private bool _Peon = true;
-    private bool _Asasin = false;
-    private bool _Mordred = false;
-    private bool _M = false;                 // Je me rapele pas du nom lol met le
-    private bool _Groot = false;
 
-    public GoodPlayer (bool Merlin, bool Preseval, bool Peon, bool Assasin, bool Mordred, bool M, bool Groot);
-    public bool GetGoodPlayer() {
-        return _Merlin;
-        return _Preseval;
-        return _Peon;
-        return _Asasin;
-        return _Mordred;
-        return _M;                           // La aussi lol
-        return _Merlin;
-    }
-}
+
 
 public class CardDraw : MonoBehaviour {
     private List<Card> draw;
@@ -61,6 +43,72 @@ public class CardDraw : MonoBehaviour {
     }
 	// Use this for initialization
 	void Start () {
+        if (CardDefinition.Length >= 5)
+        {
+            if (CardDefinition.Length >= 6)
+            {
+                if (CardDefinition.Length >= 7)
+                {
+                    if (CardDefinition.Length >= 8)
+                    {
+                        if (CardDefinition.Length >= 9)
+                        {
+                            if (CardDefinition.Length >= 10)
+                            {
+                                if (CardDefinition.Length >= 11)
+                                {
+                                    if (CardDefinition.Length >= 12)
+                                    {
+                                        // (12) Player
+                                        // set the Role liste to "Morgana", "Mordred", "Assasin", "Groot", "BadPeon", "Merlin", "Perceval", "Peon_1", "Peon_2", "Peon_3", "Peon_4", "Peon_5"
+                                    }
+
+                                }
+                                else
+                                {
+                                    // (11) Player
+                                    // set the Role liste to "Morgana", "Mordred", "Assasin", "Groot", "BadPeon", "Merlin", "Perceval", "Peon_1", "Peon_2", "Peon_3", "Peon_4"
+                                }
+                            }
+                            else
+                            {
+                                // (10)  
+                                // set the Role liste to "Morgana", "Mordred", "Assasin", "Groot", "Merlin", "Perceval", "Peon_1", "Peon_2", "Peon_3", "Peon_4"
+                            }
+                        }
+                        else
+                        {
+                            // (9) Player
+                            // set the Role liste to "Morgana", "Mordred", "Assasin", "Groot", "Merlin", "Perceval", "Peon_1", "Peon_2", "Peon_3"
+                        }
+                    }
+                    else
+                    {
+                        // (8) Player
+                        // set the Role liste to "Morgana", "Mordred", "Assasin", Merlin", "Perceval", "Peon_1", "Peon_2", "Peon_3"
+                    }
+                }
+                else
+                {
+                    // (7) Player
+                    // set the Role liste to "Morgana", "Mordred", "Assasin", Merlin", "Perceval", "Peon_1", "Peon_2"
+                }
+            }
+            else
+            {
+                // (6) Player
+                // set the Role liste to "Mordred", "Assasin", Merlin", "Perceval", "Peon_1", "Peon_2"
+            }
+        }
+        else
+        {
+            // (5) Player
+            // set the Role liste to "Mordred", "Assasin", Merlin", "Perceval", "Peon_1"
+        }
+
+
+
+
         Debug.Log(CardDefinition.Length);
         draw = initDraw();
         GetCard().GetImg().SetActive(true);
